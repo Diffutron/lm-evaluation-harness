@@ -55,6 +55,7 @@ eval_logger = logging.getLogger(__name__)
 class TaskConfig(dict):
     # task naming/registry
     task: Optional[str] = None
+    group: Optional[str] = None
     task_alias: Optional[str] = None
     tag: Optional[Union[str, list]] = None
     # HF dataset options.
